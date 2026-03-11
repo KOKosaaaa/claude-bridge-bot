@@ -1,0 +1,5 @@
+aiogram>=3.0.0
+python-dotenv>=1.0.0
+# Опционально для голосовых сообщений:
+# SpeechRecognition>=3.10.0
+# pydub>=0.25.1

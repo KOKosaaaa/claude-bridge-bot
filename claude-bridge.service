@@ -1,0 +1,15 @@
+[Unit]
+Description=Claude Code Telegram Bridge Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/claude-bridge-bot
+ExecStart=/usr/bin/python3 /opt/claude-bridge-bot/bot.py
+Restart=on-failure
+RestartSec=10s
+EnvironmentFile=/opt/claude-bridge-bot/.env
+
+[Install]
+WantedBy=multi-user.target
